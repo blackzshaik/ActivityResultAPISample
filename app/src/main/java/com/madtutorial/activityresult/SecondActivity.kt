@@ -32,7 +32,7 @@ class SecondActivity : AppCompatActivity() {
 
     private fun setActivityResult(){
         val intent = Intent()
-        intent.putExtra(RESULT_TEXT,getString(R.string.the_result_string,resultEditText.text))
+        intent.putExtra(PARCELABLE_RESULT,SampleModel(description = getString(R.string.the_result_string,resultEditText.text)))
         setResult(Activity.RESULT_OK,intent)
 
     }

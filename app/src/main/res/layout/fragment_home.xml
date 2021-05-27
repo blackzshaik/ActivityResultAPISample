@@ -7,10 +7,10 @@
     tools:context=".HomeFragment">
 
     <TextView
-        android:id="@+id/resultTextView"
+        android:id="@+id/permissionStatusTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/waiting_for_result"
+        android:text="Permission Not Granted"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -18,14 +18,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/getResultButton"
+        android:id="@+id/requestPermissionButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/get_result"
+        android:text="Request Permission"
         android:textAllCaps="false"
         android:layout_marginTop="@dimen/std_32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resultTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/permissionStatusTextView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
